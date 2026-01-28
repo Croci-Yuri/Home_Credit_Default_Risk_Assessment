@@ -1,10 +1,20 @@
+    # Authenticate with Google Cloud
+## gcloud auth application-default login ##
+
+
+
 # Import libraries
 from google.cloud import bigquery
 import os
+from pathlib import Path
+
+
+# Set working directory
+project_root = Path(__file__).parent.parent
+folder = project_root / 'data' / 'raw'
 
 # BigQuery Info
 client = bigquery.Client(project="fresh-edge-485011-c3")
-folder = "raw"
 
 # Loop through files and load to BigQuery
 for file in os.listdir(folder):
