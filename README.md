@@ -1,4 +1,4 @@
-# Home Credit Default Risk Assessment
+# Default Risk Assessment
 
 End-to-end credit risk modeling and customer segmentation using the [Home Credit Default Risk dataset](https://www.kaggle.com/c/home-credit-default-risk) with implementation of LightGBM classification for loan default prediction.
 
